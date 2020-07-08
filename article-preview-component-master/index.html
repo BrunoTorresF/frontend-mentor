@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="preview-content">
+      <div class="preview-container">
+        <figure class="preview-image"><img class="image-primary" src="images/drawers.jpg" alt="primary preview image">
+        </figure>
+        <div class="card-content">
+          <div class="content-wrapper">
+            <h1>Shift the overall look and feel by adding these wonderful
+              touches to furniture in your home</h1>
+            <p>Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips
+              to help you make any room feel complete.</p>
+            <div class="card-tail">
+              <div class="author-info">
+                <figure class="avatar">
+                  <img class="avatar-image" src="images/avatar-michelle.jpg" alt="user avatar image">
+                </figure>
+                <div class="author-subtitle">
+                  <h6>Michelle Appleton</h6>
+                  <p>28 Jun 2020</p>
+                </div>
+              </div>
+              <div class="popup">
+                <div id="share-popup" class="popup-drawer">
+                  <p>
+                    SHARE
+                  </p>
+                  <img src="images/icon-facebook.svg" alt="facebook icon">
+                  <img src="images/icon-twitter.svg" alt="twitter icon">
+                  <img src="images/icon-pinterest.svg" alt="pinterest icon">
+                </div>
+                <button onclick="togglePopup()" id="share-icon" class="share-btn"><img src="images/icon-share.svg"
+                    alt="share icon"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Bruno</a>.
+    </div>
+  </main>
+  <script>
+    // When the user clicks on <div>, open the popup
+    function togglePopup() {
+      var popup = document.getElementById("share-popup");
+      popup.classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>
